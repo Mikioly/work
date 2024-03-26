@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat Dec  9 10:15:57 2023
+| Host         : LAPTOP-29JSQ2PH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dist_mem_gen_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dist_mem_gen_0 (xilinx.com:ip:dist_mem_gen:8.0) from (Rev. 12) to (Rev. 13)
+
