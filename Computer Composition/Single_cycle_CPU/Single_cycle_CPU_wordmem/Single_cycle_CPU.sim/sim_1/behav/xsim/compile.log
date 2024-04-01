@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/SCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/dm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/im.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module im
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/sccomp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sccomp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/code/test1_code/code/sccomp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sccomp_tb
