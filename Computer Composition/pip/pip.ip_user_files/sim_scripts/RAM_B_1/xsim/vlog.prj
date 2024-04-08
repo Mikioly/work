@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../pip.gen/sources_1/ip/RAM_B_1/sim/RAM_B.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
