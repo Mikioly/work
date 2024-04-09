@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Apr  2 16:55:48 2024
+# Process ID: 22204
+# Current directory: D:/Vivado/test/test.runs/RAM_B_synth_1
+# Command line: vivado.exe -log RAM_B.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM_B.tcl
+# Log file: D:/Vivado/test/test.runs/RAM_B_synth_1/RAM_B.vds
+# Journal file: D:/Vivado/test/test.runs/RAM_B_synth_1\vivado.jou
+# Running On: LAPTOP-29JSQ2PH, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+source RAM_B.tcl -notrace
