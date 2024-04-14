@@ -1,0 +1,2369 @@
+
+*** Running vivado
+    with args -log sccomp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sccomp.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source sccomp.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Vivado/Single_cycle_CPU/Single_cycle_CPU.srcs/utils_1/imports/synth_1/sccomp.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Vivado/Single_cycle_CPU/Single_cycle_CPU.srcs/utils_1/imports/synth_1/sccomp.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top sccomp -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1288.336 ; gain = 410.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sccomp' [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:50]
+INFO: [Synth 8-6157] synthesizing module 'GRE_array' [D:/Vivado/Single_cycle_CPU/pip code/GRE_array.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'GRE_array' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/GRE_array.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:51]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:52]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Vivado/Single_cycle_CPU/pip code/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/PC.v:1]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:68]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:69]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:70]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/Vivado/Single_cycle_CPU/pip code/ctrl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/Vivado/Single_cycle_CPU/pip code/RF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/RF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [D:/Vivado/Single_cycle_CPU/pip code/EXT.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/EXT.v:2]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:116]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:117]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:118]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:119]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:120]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:121]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Vivado/Single_cycle_CPU/pip code/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Single_cycle_CPU/pip code/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/alu.v:3]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:136]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:137]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:138]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:139]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:155]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:156]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:157]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:182]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'dm' [D:/Vivado/Single_cycle_CPU/pip code/dm.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Single_cycle_CPU/pip code/dm.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'dm' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/dm.v:2]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (7) of module 'dm' [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:34]
+INFO: [Synth 8-6157] synthesizing module 'im' [D:/Vivado/Single_cycle_CPU/pip code/im.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'im' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/im.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sccomp' (0#1) [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+WARNING: [Synth 8-3848] Net GPRSel in module/entity ctrl does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/ctrl.v:20]
+WARNING: [Synth 8-7137] Register rf_reg[0] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Single_cycle_CPU/pip code/RF.v:16]
+WARNING: [Synth 8-3848] Net reg_data in module/entity SCPU does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/SCPU.v:15]
+WARNING: [Synth 8-4767] Trying to implement RAM 'dmem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "dmem_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+WARNING: [Synth 8-3848] Net ROM in module/entity im does not have driver. [D:/Vivado/Single_cycle_CPU/pip code/im.v:6]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port GPRSel[1] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPRSel[0] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Zero in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[31] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[30] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[29] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[28] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[27] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[26] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[25] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[24] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[23] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[22] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[21] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[20] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[19] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[18] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[17] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[16] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[15] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[14] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[13] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[12] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[11] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[10] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[9] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[8] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[7] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[6] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[5] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[4] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[3] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[2] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[1] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[0] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[4] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[3] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[2] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[1] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[0] in module SCPU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1457.176 ; gain = 579.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1457.176 ; gain = 579.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1457.176 ; gain = 579.051
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.213 . Memory (MB): peak = 1457.176 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Vivado/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [D:/Vivado/icf.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'BTNC_IBUF'. [D:/Vivado/icf.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[0]'. [D:/Vivado/icf.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'rstn_IBUF'. [D:/Vivado/icf.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[4]'. [D:/Vivado/icf.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[0]'. [D:/Vivado/icf.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[1]'. [D:/Vivado/icf.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[2]'. [D:/Vivado/icf.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[3]'. [D:/Vivado/icf.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[4]'. [D:/Vivado/icf.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[5]'. [D:/Vivado/icf.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[6]'. [D:/Vivado/icf.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_seg_o[7]'. [D:/Vivado/icf.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[0]'. [D:/Vivado/icf.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[1]'. [D:/Vivado/icf.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[2]'. [D:/Vivado/icf.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[3]'. [D:/Vivado/icf.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[4]'. [D:/Vivado/icf.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[5]'. [D:/Vivado/icf.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[6]'. [D:/Vivado/icf.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp_an_o[7]'. [D:/Vivado/icf.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[0]'. [D:/Vivado/icf.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[1]'. [D:/Vivado/icf.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[2]'. [D:/Vivado/icf.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[3]'. [D:/Vivado/icf.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[4]'. [D:/Vivado/icf.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[5]'. [D:/Vivado/icf.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[6]'. [D:/Vivado/icf.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[7]'. [D:/Vivado/icf.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[8]'. [D:/Vivado/icf.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[9]'. [D:/Vivado/icf.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[10]'. [D:/Vivado/icf.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[11]'. [D:/Vivado/icf.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[12]'. [D:/Vivado/icf.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[13]'. [D:/Vivado/icf.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[14]'. [D:/Vivado/icf.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[15]'. [D:/Vivado/icf.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [D:/Vivado/icf.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [D:/Vivado/icf.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [D:/Vivado/icf.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [D:/Vivado/icf.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [D:/Vivado/icf.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [D:/Vivado/icf.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [D:/Vivado/icf.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [D:/Vivado/icf.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [D:/Vivado/icf.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [D:/Vivado/icf.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [D:/Vivado/icf.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [D:/Vivado/icf.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [D:/Vivado/icf.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [D:/Vivado/icf.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [D:/Vivado/icf.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [D:/Vivado/icf.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [D:/Vivado/icf.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [D:/Vivado/icf.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/Vivado/icf.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [D:/Vivado/icf.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [D:/Vivado/icf.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [D:/Vivado/icf.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado/icf.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Vivado/icf.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sccomp_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sccomp_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1560.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1560.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Over 50% of partitions are impacted by design changes. Reverting to default synthesis
+WARNING: [Synth 8-6702] IncrSynth : Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [D:/Vivado/Single_cycle_CPU/pip code/ctrl.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'WD_reg' [D:/Vivado/Single_cycle_CPU/pip code/alu.v:105]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Change is too high
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 161   
++---Muxes : 
+	   8 Input 4096 Bit        Muxes := 1     
+	   4 Input 4096 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1183  
+	   4 Input   32 Bit        Muxes := 6     
+	  19 Input   32 Bit        Muxes := 2     
+	  15 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	  19 Input    4 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 32    
+	  19 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port GPRSel[1] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPRSel[0] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Zero in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[31] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[30] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[29] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[28] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[27] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[26] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[25] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[24] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[23] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[22] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[21] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[20] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[19] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[18] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[17] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[16] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[15] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[14] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[13] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[12] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[11] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[10] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[9] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[8] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[7] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[6] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[5] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[4] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[3] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[2] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[1] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[0] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[4] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[3] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[2] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[1] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[0] in module SCPU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:13 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:17 . Memory (MB): peak = 1560.242 ; gain = 682.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_448 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_442 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_436 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_430 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_424 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_418 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_412 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing U_DMi_5/i_0/i_406 -from B -to Z'
+info: optimization accepted worst group hill climbing move (42038.0/oG.CP 594.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:51 ; elapsed = 00:05:20 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5595 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5604 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5676 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5664 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5654 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5642 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5630 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5616 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5467 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5454 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5429 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5570 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5545 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5532 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5519 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5506 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5492 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5442 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5417 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5405 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5378 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5480 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5583 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_0/i_5558 -from I1 -to O'
+Found timing loop:
+     0: i_0/i_3404/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3404/I1 (LUT2)
+     2: i_0/i_3428/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3428/I1 (LUT2)
+     4: i_0/i_2083/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2083/I4 (LUT6)
+     6: i_0/i_3404/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3404"
+Found timing loop:
+     0: i_0/i_3428/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3428/I0 (LUT2)
+     2: i_0/i_3154/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3154/I0 (LUT4)
+     4: i_0/i_3428/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3428"
+Found timing loop:
+     0: i_0/i_3403/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3403/I1 (LUT2)
+     2: i_0/i_3427/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3427/I1 (LUT2)
+     4: i_0/i_2084/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2084/I3 (LUT6)
+     6: i_0/i_3403/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3403"
+Found timing loop:
+     0: i_0/i_3427/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3427/I0 (LUT2)
+     2: i_0/i_3155/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3155/I0 (LUT4)
+     4: i_0/i_3427/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3427"
+Found timing loop:
+     0: i_0/i_3402/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3402/I1 (LUT2)
+     2: i_0/i_3426/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3426/I1 (LUT2)
+     4: i_0/i_2085/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2085/I3 (LUT6)
+     6: i_0/i_3402/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3402"
+Found timing loop:
+     0: i_0/i_3426/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3426/I0 (LUT2)
+     2: i_0/i_3156/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3156/I0 (LUT4)
+     4: i_0/i_3426/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3426"
+Found timing loop:
+     0: i_0/i_3401/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3401/I1 (LUT2)
+     2: i_0/i_3425/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3425/I1 (LUT2)
+     4: i_0/i_2086/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2086/I3 (LUT5)
+     6: i_0/i_3401/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3401"
+Found timing loop:
+     0: i_0/i_3425/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3425/I0 (LUT2)
+     2: i_0/i_3157/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3157/I0 (LUT4)
+     4: i_0/i_3425/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3425"
+Found timing loop:
+     0: i_0/i_3400/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3400/I1 (LUT2)
+     2: i_0/i_3424/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3424/I1 (LUT2)
+     4: i_0/i_2087/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2087/I3 (LUT6)
+     6: i_0/i_3400/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3400"
+Found timing loop:
+     0: i_0/i_3424/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3424/I0 (LUT2)
+     2: i_0/i_3158/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3158/I0 (LUT4)
+     4: i_0/i_3424/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3424"
+Found timing loop:
+     0: i_0/i_3399/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3399/I1 (LUT2)
+     2: i_0/i_3423/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3423/I1 (LUT2)
+     4: i_0/i_2088/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2088/I3 (LUT6)
+     6: i_0/i_3399/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3399"
+Found timing loop:
+     0: i_0/i_3423/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3423/I0 (LUT2)
+     2: i_0/i_3159/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3159/I0 (LUT4)
+     4: i_0/i_3423/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3423"
+Found timing loop:
+     0: i_0/i_3398/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3398/I1 (LUT2)
+     2: i_0/i_3422/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3422/I1 (LUT2)
+     4: i_0/i_2089/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2089/I3 (LUT5)
+     6: i_0/i_3398/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3398"
+Found timing loop:
+     0: i_0/i_3422/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3422/I0 (LUT2)
+     2: i_0/i_3160/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3160/I0 (LUT4)
+     4: i_0/i_3422/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3422"
+Found timing loop:
+     0: i_0/i_3397/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3397/I1 (LUT2)
+     2: i_0/i_3421/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3421/I1 (LUT2)
+     4: i_0/i_2090/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2090/I4 (LUT6)
+     6: i_0/i_3397/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3397"
+Found timing loop:
+     0: i_0/i_3421/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3421/I0 (LUT2)
+     2: i_0/i_3161/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3161/I0 (LUT4)
+     4: i_0/i_3421/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3421"
+Found timing loop:
+     0: i_0/i_3420/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3420/I1 (LUT2)
+     2: i_0/i_3444/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3444/I1 (LUT2)
+     4: i_0/i_2092/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2092/I3 (LUT6)
+     6: i_0/i_3420/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3420"
+Found timing loop:
+     0: i_0/i_3444/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3444/I0 (LUT2)
+     2: i_0/i_3138/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3138/I0 (LUT4)
+     4: i_0/i_3444/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3444"
+Found timing loop:
+     0: i_0/i_3419/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3419/I1 (LUT2)
+     2: i_0/i_3443/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3443/I1 (LUT2)
+     4: i_0/i_2093/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2093/I3 (LUT6)
+     6: i_0/i_3419/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3419"
+Found timing loop:
+     0: i_0/i_3443/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3443/I0 (LUT2)
+     2: i_0/i_3139/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3139/I0 (LUT4)
+     4: i_0/i_3443/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3443"
+Found timing loop:
+     0: i_0/i_3418/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3418/I1 (LUT2)
+     2: i_0/i_3442/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3442/I1 (LUT2)
+     4: i_0/i_2094/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2094/I4 (LUT6)
+     6: i_0/i_3418/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3418"
+Found timing loop:
+     0: i_0/i_3442/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3442/I0 (LUT2)
+     2: i_0/i_3140/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3140/I0 (LUT4)
+     4: i_0/i_3442/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3442"
+Found timing loop:
+     0: i_0/i_3417/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3417/I1 (LUT2)
+     2: i_0/i_3441/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3441/I1 (LUT2)
+     4: i_0/i_2095/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2095/I3 (LUT6)
+     6: i_0/i_3417/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3417"
+Found timing loop:
+     0: i_0/i_3441/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3441/I0 (LUT2)
+     2: i_0/i_3141/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3141/I0 (LUT4)
+     4: i_0/i_3441/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3441"
+Found timing loop:
+     0: i_0/i_3416/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3416/I1 (LUT2)
+     2: i_0/i_3440/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3440/I1 (LUT2)
+     4: i_0/i_2096/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2096/I3 (LUT6)
+     6: i_0/i_3416/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3416"
+Found timing loop:
+     0: i_0/i_3440/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3440/I0 (LUT2)
+     2: i_0/i_3142/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3142/I0 (LUT4)
+     4: i_0/i_3440/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3440"
+Found timing loop:
+     0: i_0/i_3415/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3415/I1 (LUT2)
+     2: i_0/i_3439/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3439/I1 (LUT2)
+     4: i_0/i_2097/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2097/I3 (LUT6)
+     6: i_0/i_3415/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3415"
+Found timing loop:
+     0: i_0/i_3439/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3439/I0 (LUT2)
+     2: i_0/i_3143/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3143/I0 (LUT4)
+     4: i_0/i_3439/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3439"
+Found timing loop:
+     0: i_0/i_3414/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3414/I1 (LUT2)
+     2: i_0/i_3438/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3438/I1 (LUT2)
+     4: i_0/i_2098/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2098/I4 (LUT6)
+     6: i_0/i_3414/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3414"
+Found timing loop:
+     0: i_0/i_3438/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3438/I0 (LUT2)
+     2: i_0/i_3144/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3144/I0 (LUT4)
+     4: i_0/i_3438/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3438"
+Found timing loop:
+     0: i_0/i_3413/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3413/I1 (LUT2)
+     2: i_0/i_3437/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3437/I1 (LUT2)
+     4: i_0/i_2099/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2099/I2 (LUT4)
+     6: i_0/i_3413/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3413"
+Found timing loop:
+     0: i_0/i_3437/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3437/I0 (LUT2)
+     2: i_0/i_3145/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3145/I0 (LUT4)
+     4: i_0/i_3437/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3437"
+Found timing loop:
+     0: i_0/i_3412/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3412/I1 (LUT2)
+     2: i_0/i_3436/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3436/I1 (LUT2)
+     4: i_0/i_2100/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2100/I4 (LUT6)
+     6: i_0/i_3412/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3412"
+Found timing loop:
+     0: i_0/i_3436/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3436/I0 (LUT2)
+     2: i_0/i_3146/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3146/I0 (LUT4)
+     4: i_0/i_3436/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3436"
+Found timing loop:
+     0: i_0/i_3411/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3411/I1 (LUT2)
+     2: i_0/i_3435/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3435/I1 (LUT2)
+     4: i_0/i_2101/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2101/I4 (LUT6)
+     6: i_0/i_3411/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3411"
+Found timing loop:
+     0: i_0/i_3435/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3435/I0 (LUT2)
+     2: i_0/i_3147/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3147/I0 (LUT4)
+     4: i_0/i_3435/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3435"
+Found timing loop:
+     0: i_0/i_3410/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3410/I1 (LUT2)
+     2: i_0/i_3434/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3434/I1 (LUT2)
+     4: i_0/i_2102/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2102/I4 (LUT6)
+     6: i_0/i_3410/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3410"
+Found timing loop:
+     0: i_0/i_3434/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3434/I0 (LUT2)
+     2: i_0/i_3148/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3148/I0 (LUT4)
+     4: i_0/i_3434/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3434"
+Found timing loop:
+     0: i_0/i_3409/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3409/I1 (LUT2)
+     2: i_0/i_3433/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3433/I1 (LUT2)
+     4: i_0/i_2103/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2103/I4 (LUT6)
+     6: i_0/i_3409/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3409"
+Found timing loop:
+     0: i_0/i_3433/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3433/I0 (LUT2)
+     2: i_0/i_3149/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3149/I0 (LUT4)
+     4: i_0/i_3433/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3433"
+Found timing loop:
+     0: i_0/i_3408/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3408/I1 (LUT2)
+     2: i_0/i_3432/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3432/I1 (LUT2)
+     4: i_0/i_2104/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2104/I4 (LUT6)
+     6: i_0/i_3408/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3408"
+Found timing loop:
+     0: i_0/i_3432/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3432/I0 (LUT2)
+     2: i_0/i_3150/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3150/I0 (LUT4)
+     4: i_0/i_3432/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3432"
+Found timing loop:
+     0: i_0/i_3407/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3407/I1 (LUT2)
+     2: i_0/i_3431/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3431/I1 (LUT2)
+     4: i_0/i_2105/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2105/I4 (LUT6)
+     6: i_0/i_3407/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3407"
+Found timing loop:
+     0: i_0/i_3431/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3431/I0 (LUT2)
+     2: i_0/i_3151/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3151/I0 (LUT4)
+     4: i_0/i_3431/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3431"
+Found timing loop:
+     0: i_0/i_3406/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3406/I1 (LUT2)
+     2: i_0/i_3430/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3430/I1 (LUT2)
+     4: i_0/i_2106/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2106/I4 (LUT6)
+     6: i_0/i_3406/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3406"
+Found timing loop:
+     0: i_0/i_3430/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3430/I0 (LUT2)
+     2: i_0/i_3152/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3152/I0 (LUT4)
+     4: i_0/i_3430/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3430"
+Found timing loop:
+     0: i_0/i_3405/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3405/I1 (LUT2)
+     2: i_0/i_3429/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3429/I1 (LUT2)
+     4: i_0/i_2107/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: i_0/i_2107/I4 (LUT6)
+     6: i_0/i_3405/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3405"
+Found timing loop:
+     0: i_0/i_3429/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3429/I0 (LUT2)
+     2: i_0/i_3153/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_3153/I0 (LUT4)
+     4: i_0/i_3429/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_3429"
+Found timing loop:
+     0: i_0/i_3445/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3445/I2 (LUT3)
+     2: i_0/i_2109/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2109/I4 (LUT5)
+     4: i_0/i_3445/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3445"
+Found timing loop:
+     0: i_0/i_3445/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3445/I1 (LUT3)
+     2: i_0/i_2110/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2110/I0 (LUT5)
+     4: i_0/i_3445/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3445"
+Found timing loop:
+     0: i_0/i_3446/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3446/I2 (LUT3)
+     2: i_0/i_2126/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2126/I4 (LUT5)
+     4: i_0/i_3446/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3446"
+Found timing loop:
+     0: i_0/i_3446/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3446/I1 (LUT3)
+     2: i_0/i_2127/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2127/I0 (LUT5)
+     4: i_0/i_3446/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3446"
+Found timing loop:
+     0: i_0/i_3447/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3447/I2 (LUT3)
+     2: i_0/i_2136/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2136/I4 (LUT5)
+     4: i_0/i_3447/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3447"
+Found timing loop:
+     0: i_0/i_3447/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3447/I1 (LUT3)
+     2: i_0/i_2137/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2137/I0 (LUT5)
+     4: i_0/i_3447/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3447"
+Found timing loop:
+     0: i_0/i_3448/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3448/I2 (LUT3)
+     2: i_0/i_2146/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2146/I4 (LUT5)
+     4: i_0/i_3448/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3448"
+Found timing loop:
+     0: i_0/i_3448/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3448/I1 (LUT3)
+     2: i_0/i_2147/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2147/I0 (LUT5)
+     4: i_0/i_3448/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3448"
+Found timing loop:
+     0: i_0/i_3449/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3449/I2 (LUT3)
+     2: i_0/i_2156/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2156/I4 (LUT5)
+     4: i_0/i_3449/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3449"
+Found timing loop:
+     0: i_0/i_3449/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3449/I1 (LUT3)
+     2: i_0/i_2157/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2157/I0 (LUT5)
+     4: i_0/i_3449/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3449"
+Found timing loop:
+     0: i_0/i_3450/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3450/I2 (LUT3)
+     2: i_0/i_2166/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2166/I4 (LUT5)
+     4: i_0/i_3450/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3450"
+Found timing loop:
+     0: i_0/i_3450/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3450/I1 (LUT3)
+     2: i_0/i_2167/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2167/I0 (LUT5)
+     4: i_0/i_3450/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3450"
+Found timing loop:
+     0: i_0/i_3451/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3451/I2 (LUT3)
+     2: i_0/i_2305/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2305/I4 (LUT5)
+     4: i_0/i_3451/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3451"
+Found timing loop:
+     0: i_0/i_3451/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3451/I1 (LUT3)
+     2: i_0/i_2306/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2306/I0 (LUT5)
+     4: i_0/i_3451/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3451"
+Found timing loop:
+     0: i_0/i_3452/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3452/I2 (LUT3)
+     2: i_0/i_2333/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2333/I4 (LUT5)
+     4: i_0/i_3452/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I2 -to O i_0/i_3452"
+Found timing loop:
+     0: i_0/i_3452/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: i_0/i_3452/I1 (LUT3)
+     2: i_0/i_2334/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: i_0/i_2334/I0 (LUT5)
+     4: i_0/i_3452/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/im.v:12]
+Inferred a: "set_disable_timing -from I1 -to O i_0/i_3452"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:53 ; elapsed = 00:05:43 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_5:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_5:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_5:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_5:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_6:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_6:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_6:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_6:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_7:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_7:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_7:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_7:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_8:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_8:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_8:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_8:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_12:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_12:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_12:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_12:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_13:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_13:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_13:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_13:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_14:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_14:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_14:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_14:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_15:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_15:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_15:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_15:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_19:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_19:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_19:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_19:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_20:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_20:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_20:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_20:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_21:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_21:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_21:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_21:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_22:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_22:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_22:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_22:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_26:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_26:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_26:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_26:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_27:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_27:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_27:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_27:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_28:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_28:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_28:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_28:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_29:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_29:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_29:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_29:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_34:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_34:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_34:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_34:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_35:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_35:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_35:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_35:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_36:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_36:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_36:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_36:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_37:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_37:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_37:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_37:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_41:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_41:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_41:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_41:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_42:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_42:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_42:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_42:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_43:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_43:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_43:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_43:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_44:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_44:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_44:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_44:I5 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_48:I0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_48:I1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_48:I3 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U_IM/i_48:I5 to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:57 ; elapsed = 00:05:48 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:58 ; elapsed = 00:05:48 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[6] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[214]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[6] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[214]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[5] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[213]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[5] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[213]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[4] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[212]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[4] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[212]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[3] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[211]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[3] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[211]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[2] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[210]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[2] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[210]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[8] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[104]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[8] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[104]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[9] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[105]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[9] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[105]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[10] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[106]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[10] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[106]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[11] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[107]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[11] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[107]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[12] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[108]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[12] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[108]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[13] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[109]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[13] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[109]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[14] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[110]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[14] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[110]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[15] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[111]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[15] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[111]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[0] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[96]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[0] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[96]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[1] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[97]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[1] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[97]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[2] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[98]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[2] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[98]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[3] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[99]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[3] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[99]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[4] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[100]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[4] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[100]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[5] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[101]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[5] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[101]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[6] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[102]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[6] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[102]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[7] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[103]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[7] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[103]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[24] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[120]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[24] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[120]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[20] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[116]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[20] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[116]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[16] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[112]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[16] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[112]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmtype[2] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[164]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmtype[2] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[164]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmtype[0] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[162]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmtype[0] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[162]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmtype[1] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[163]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dmtype[1] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[163]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[0] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[208]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[0] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[208]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[1] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[209]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_addr[1] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[209]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[31] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[127]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[31] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[127]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[23] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[119]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[23] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[119]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[29] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[125]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[29] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[125]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[27] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[123]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[27] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[123]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[19] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[115]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[19] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[115]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[26] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[122]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[26] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[122]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[18] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[114]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[18] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[114]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[25] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[121]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[25] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[121]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[30] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[126]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[30] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[126]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[28] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[124]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[28] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[124]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[22] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[118]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[22] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[118]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[21] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[117]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[21] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[117]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[17] with 1st driver pin 'U_SCPU/EX_MEM/out_reg[113]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin dm_din[17] with 2nd driver pin 'U_SCPU/EX_MEM/out_reg[113]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[299] with 1st driver pin 'U_SCPU/IF_ID/out_reg[299]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[299] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[299]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[298] with 1st driver pin 'U_SCPU/IF_ID/out_reg[298]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[298] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[298]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[297] with 1st driver pin 'U_SCPU/IF_ID/out_reg[297]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[297] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[297]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[296] with 1st driver pin 'U_SCPU/IF_ID/out_reg[296]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[296] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[296]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[295] with 1st driver pin 'U_SCPU/IF_ID/out_reg[295]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[295] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[295]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[294] with 1st driver pin 'U_SCPU/IF_ID/out_reg[294]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[294] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[294]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[293] with 1st driver pin 'U_SCPU/IF_ID/out_reg[293]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[293] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[293]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[292] with 1st driver pin 'U_SCPU/IF_ID/out_reg[292]__0/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U_SCPU/IF_ID/out_orig[292] with 2nd driver pin 'U_SCPU/IF_ID/out_reg[292]/Q' [D:/Vivado/Single_cycle_CPU/pip code/NPC.v:37]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|     1183|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Found timing loop:
+     0: in_inferred__5_i_17/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_17/I0 (LUT6)
+     2: in_inferred__5_i_17/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I0 -to O in_inferred__5_i_17"
+Found timing loop:
+     0: in_inferred__5_i_33/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_33/I4 (LUT6)
+     2: in_inferred__5_i_84/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_84/I1 (LUT2)
+     4: in_inferred__5_i_1/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_1/I4 (LUT5)
+     6: in_inferred__5_i_33/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_33"
+Found timing loop:
+     0: in_inferred__5_i_1/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_1/I4 (LUT5)
+     2: in_inferred__5_i_33/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_33/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_1"
+Found timing loop:
+     0: in_inferred__5_i_38/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_38/I0 (LUT4)
+     2: in_inferred__5_i_2/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_2/I5 (LUT6)
+     4: in_inferred__5_i_38/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I0 -to O in_inferred__5_i_38"
+Found timing loop:
+     0: in_inferred__5_i_2/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_2/I5 (LUT6)
+     2: in_inferred__5_i_38/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_38/O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I5 -to O in_inferred__5_i_2"
+Found timing loop:
+     0: in_inferred__5_i_39/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_39/I1 (LUT6)
+     2: in_inferred__5_i_3/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_3/I4 (LUT5)
+     4: in_inferred__5_i_39/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_39"
+Found timing loop:
+     0: in_inferred__5_i_3/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_3/I4 (LUT5)
+     2: in_inferred__5_i_39/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_39/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_3"
+Found timing loop:
+     0: in_inferred__5_i_40/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_40/I1 (LUT6)
+     2: in_inferred__5_i_4/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_4/I4 (LUT5)
+     4: in_inferred__5_i_40/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_40"
+Found timing loop:
+     0: in_inferred__5_i_4/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_4/I4 (LUT5)
+     2: in_inferred__5_i_40/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_40/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_4"
+Found timing loop:
+     0: in_inferred__5_i_43/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_43/I0 (LUT4)
+     2: in_inferred__5_i_5/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_5/I5 (LUT6)
+     4: in_inferred__5_i_43/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I0 -to O in_inferred__5_i_43"
+Found timing loop:
+     0: in_inferred__5_i_5/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_5/I5 (LUT6)
+     2: in_inferred__5_i_43/O (LUT4)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_43/O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I5 -to O in_inferred__5_i_5"
+Found timing loop:
+     0: in_inferred__5_i_44/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_44/I1 (LUT6)
+     2: in_inferred__5_i_6/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_6/I4 (LUT5)
+     4: in_inferred__5_i_44/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_44"
+Found timing loop:
+     0: in_inferred__5_i_6/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_6/I4 (LUT5)
+     2: in_inferred__5_i_44/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_44/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_6"
+Found timing loop:
+     0: in_inferred__5_i_45/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_45/I1 (LUT6)
+     2: in_inferred__5_i_7/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_7/I4 (LUT5)
+     4: in_inferred__5_i_45/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_45"
+Found timing loop:
+     0: in_inferred__5_i_7/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_7/I4 (LUT5)
+     2: in_inferred__5_i_45/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_45/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_7"
+Found timing loop:
+     0: in_inferred__5_i_46/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_46/I4 (LUT6)
+     2: in_inferred__5_i_101/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_101/I1 (LUT2)
+     4: in_inferred__5_i_8/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_8/I4 (LUT5)
+     6: in_inferred__5_i_46/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_46"
+Found timing loop:
+     0: in_inferred__5_i_8/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_8/I4 (LUT5)
+     2: in_inferred__5_i_46/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_46/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_8"
+Found timing loop:
+     0: in_inferred__5_i_47/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_47/I4 (LUT6)
+     2: in_inferred__5_i_104/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_104/I1 (LUT2)
+     4: in_inferred__5_i_9/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_9/I4 (LUT5)
+     6: in_inferred__5_i_47/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_47"
+Found timing loop:
+     0: in_inferred__5_i_9/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_9/I4 (LUT5)
+     2: in_inferred__5_i_47/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_47/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_9"
+Found timing loop:
+     0: in_inferred__5_i_48/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_48/I4 (LUT6)
+     2: in_inferred__5_i_106/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_106/I1 (LUT2)
+     4: in_inferred__5_i_10/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_10/I4 (LUT5)
+     6: in_inferred__5_i_48/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_48"
+Found timing loop:
+     0: in_inferred__5_i_10/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_10/I4 (LUT5)
+     2: in_inferred__5_i_48/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_48/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_10"
+Found timing loop:
+     0: in_inferred__5_i_49/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_49/I4 (LUT6)
+     2: in_inferred__5_i_108/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_108/I1 (LUT2)
+     4: in_inferred__5_i_11/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_11/I4 (LUT5)
+     6: in_inferred__5_i_49/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_49"
+Found timing loop:
+     0: in_inferred__5_i_11/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_11/I4 (LUT5)
+     2: in_inferred__5_i_49/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_49/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_11"
+Found timing loop:
+     0: in_inferred__5_i_50/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_50/I4 (LUT6)
+     2: in_inferred__5_i_110/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_110/I1 (LUT2)
+     4: in_inferred__5_i_12/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_12/I4 (LUT5)
+     6: in_inferred__5_i_50/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_50"
+Found timing loop:
+     0: in_inferred__5_i_12/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_12/I4 (LUT5)
+     2: in_inferred__5_i_50/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_50/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_12"
+Found timing loop:
+     0: in_inferred__5_i_51/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_51/I4 (LUT6)
+     2: in_inferred__5_i_112/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_112/I1 (LUT2)
+     4: in_inferred__5_i_13/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_13/I4 (LUT5)
+     6: in_inferred__5_i_51/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_51"
+Found timing loop:
+     0: in_inferred__5_i_13/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_13/I4 (LUT5)
+     2: in_inferred__5_i_51/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_51/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_13"
+Found timing loop:
+     0: in_inferred__5_i_52/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_52/I4 (LUT6)
+     2: in_inferred__5_i_114/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_114/I1 (LUT2)
+     4: in_inferred__5_i_14/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_14/I4 (LUT5)
+     6: in_inferred__5_i_52/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_52"
+Found timing loop:
+     0: in_inferred__5_i_14/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_14/I4 (LUT5)
+     2: in_inferred__5_i_52/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_52/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_14"
+Found timing loop:
+     0: in_inferred__5_i_53/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_53/I4 (LUT6)
+     2: in_inferred__5_i_116/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_116/I1 (LUT2)
+     4: in_inferred__5_i_15/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_15/I4 (LUT5)
+     6: in_inferred__5_i_53/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_53"
+Found timing loop:
+     0: in_inferred__5_i_15/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_15/I4 (LUT5)
+     2: in_inferred__5_i_53/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_53/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_15"
+Found timing loop:
+     0: in_inferred__5_i_54/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_54/I4 (LUT6)
+     2: in_inferred__5_i_118/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_118/I1 (LUT2)
+     4: in_inferred__5_i_16/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_16/I4 (LUT5)
+     6: in_inferred__5_i_54/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_54"
+Found timing loop:
+     0: in_inferred__5_i_16/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_16/I4 (LUT5)
+     2: in_inferred__5_i_54/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_54/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_16"
+Found timing loop:
+     0: in_inferred__5_i_57/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_57/I4 (LUT6)
+     2: in_inferred__5_i_124/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_124/I1 (LUT2)
+     4: in_inferred__5_i_18/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_18/I4 (LUT5)
+     6: in_inferred__5_i_57/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_57"
+Found timing loop:
+     0: in_inferred__5_i_18/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_18/I4 (LUT5)
+     2: in_inferred__5_i_57/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_57/O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_18"
+Found timing loop:
+     0: in_inferred__5_i_58/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_58/I1 (LUT6)
+     2: in_inferred__5_i_19/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_19/I4 (LUT5)
+     4: in_inferred__5_i_58/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Vivado/Single_cycle_CPU/pip code/sccomp.v:1]
+INFO: [Common 17-14] Message 'Synth 8-295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_58"
+Found timing loop:
+     0: in_inferred__5_i_19/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_19/I4 (LUT5)
+     2: in_inferred__5_i_58/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_58/O (LUT6)
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_19"
+Found timing loop:
+     0: in_inferred__5_i_59/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_59/I1 (LUT6)
+     2: in_inferred__5_i_20/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_20/I4 (LUT5)
+     4: in_inferred__5_i_59/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_59"
+Found timing loop:
+     0: in_inferred__5_i_20/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_20/I4 (LUT5)
+     2: in_inferred__5_i_59/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_59/O (LUT6)
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_20"
+Found timing loop:
+     0: in_inferred__5_i_60/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_60/I1 (LUT6)
+     2: in_inferred__5_i_21/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_21/I4 (LUT5)
+     4: in_inferred__5_i_60/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_60"
+Found timing loop:
+     0: in_inferred__5_i_21/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_21/I4 (LUT5)
+     2: in_inferred__5_i_60/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_60/O (LUT6)
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_21"
+Found timing loop:
+     0: in_inferred__5_i_61/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_61/I4 (LUT6)
+     2: in_inferred__5_i_134/O (LUT2)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_134/I1 (LUT2)
+     4: in_inferred__5_i_22/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     5: in_inferred__5_i_22/I4 (LUT5)
+     6: in_inferred__5_i_61/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_61"
+Found timing loop:
+     0: in_inferred__5_i_22/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_22/I4 (LUT5)
+     2: in_inferred__5_i_61/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_61/O (LUT6)
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_22"
+Found timing loop:
+     0: in_inferred__5_i_62/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_62/I1 (LUT6)
+     2: in_inferred__5_i_23/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_23/I4 (LUT5)
+     4: in_inferred__5_i_62/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_62"
+Found timing loop:
+     0: in_inferred__5_i_23/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_23/I4 (LUT5)
+     2: in_inferred__5_i_62/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_62/O (LUT6)
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_23"
+Found timing loop:
+     0: in_inferred__5_i_63/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_63/I1 (LUT6)
+     2: in_inferred__5_i_24/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_24/I4 (LUT5)
+     4: in_inferred__5_i_63/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I1 -to O in_inferred__5_i_63"
+Found timing loop:
+     0: in_inferred__5_i_24/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_24/I4 (LUT5)
+     2: in_inferred__5_i_63/O (LUT6)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_63/O (LUT6)
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_24"
+Found timing loop:
+     0: in_inferred__5_i_66/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_66/I4 (LUT5)
+     2: in_inferred__5_i_25/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_25/I2 (LUT3)
+     4: in_inferred__5_i_66/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_66"
+Found timing loop:
+     0: in_inferred__5_i_25/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_25/I2 (LUT3)
+     2: in_inferred__5_i_66/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_66/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_25"
+Found timing loop:
+     0: in_inferred__5_i_68/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_68/I4 (LUT5)
+     2: in_inferred__5_i_26/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_26/I2 (LUT3)
+     4: in_inferred__5_i_68/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_68"
+Found timing loop:
+     0: in_inferred__5_i_26/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_26/I2 (LUT3)
+     2: in_inferred__5_i_68/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_68/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_26"
+Found timing loop:
+     0: in_inferred__5_i_70/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_70/I4 (LUT5)
+     2: in_inferred__5_i_27/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_27/I2 (LUT3)
+     4: in_inferred__5_i_70/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_70"
+Found timing loop:
+     0: in_inferred__5_i_27/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_27/I2 (LUT3)
+     2: in_inferred__5_i_70/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_70/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_27"
+Found timing loop:
+     0: in_inferred__5_i_72/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_72/I4 (LUT5)
+     2: in_inferred__5_i_28/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_28/I2 (LUT3)
+     4: in_inferred__5_i_72/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_72"
+Found timing loop:
+     0: in_inferred__5_i_28/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_28/I2 (LUT3)
+     2: in_inferred__5_i_72/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_72/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_28"
+Found timing loop:
+     0: in_inferred__5_i_74/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_74/I4 (LUT5)
+     2: in_inferred__5_i_29/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_29/I2 (LUT3)
+     4: in_inferred__5_i_74/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_74"
+Found timing loop:
+     0: in_inferred__5_i_29/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_29/I2 (LUT3)
+     2: in_inferred__5_i_74/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_74/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_29"
+Found timing loop:
+     0: in_inferred__5_i_76/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_76/I4 (LUT5)
+     2: in_inferred__5_i_30/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_30/I2 (LUT3)
+     4: in_inferred__5_i_76/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_76"
+Found timing loop:
+     0: in_inferred__5_i_30/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_30/I2 (LUT3)
+     2: in_inferred__5_i_76/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_76/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_30"
+Found timing loop:
+     0: in_inferred__5_i_78/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_78/I4 (LUT5)
+     2: in_inferred__5_i_31/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_31/I2 (LUT3)
+     4: in_inferred__5_i_78/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_78"
+Found timing loop:
+     0: in_inferred__5_i_31/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_31/I2 (LUT3)
+     2: in_inferred__5_i_78/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_78/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_31"
+Found timing loop:
+     0: in_inferred__5_i_80/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_80/I4 (LUT5)
+     2: in_inferred__5_i_32/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_32/I2 (LUT3)
+     4: in_inferred__5_i_80/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+Inferred a: "set_disable_timing -from I4 -to O in_inferred__5_i_80"
+Found timing loop:
+     0: in_inferred__5_i_32/O (LUT3)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     1: in_inferred__5_i_32/I2 (LUT3)
+     2: in_inferred__5_i_80/O (LUT5)
+      [D:/Vivado/Single_cycle_CPU/pip code/im.v:15]
+     3: in_inferred__5_i_80/O (LUT5)
+Inferred a: "set_disable_timing -from I2 -to O in_inferred__5_i_32"
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_3/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_4/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_6/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_7/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_9/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_10/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_11/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_12/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_13/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_14/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_15/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_16/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_18/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_19/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_20/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_21/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_22/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_23/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_24/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_1/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_8/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_37/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_42/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_65/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_67/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_69/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_71/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_73/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_75/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_77/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through in_inferred__5_i_79/O'
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:00 ; elapsed = 00:05:50 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:00 ; elapsed = 00:05:50 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:00 ; elapsed = 00:05:51 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:00 ; elapsed = 00:05:51 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    47|
+|3     |LUT1   |  1007|
+|4     |LUT2   |   205|
+|5     |LUT3   |  2686|
+|6     |LUT4   |  2282|
+|7     |LUT5   |  3310|
+|8     |LUT6   | 11281|
+|9     |MUXF7  |  1247|
+|10    |MUXF8  |   358|
+|11    |FDCE   |  1046|
+|12    |FDRE   |  3280|
+|13    |FD     |  1200|
+|14    |LD     |    64|
+|15    |IBUF   |     2|
+|16    |OBUFT  |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:00 ; elapsed = 00:05:51 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2527 critical warnings and 4262 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:51 ; elapsed = 00:05:48 . Memory (MB): peak = 2010.258 ; gain = 1029.066
+Synthesis Optimization Complete : Time (s): cpu = 00:05:00 ; elapsed = 00:05:52 . Memory (MB): peak = 2010.258 ; gain = 1132.133
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 2010.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2916 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2010.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1264 instances were transformed.
+  FD_1 => FDRE (inverted pins: C): 1200 instances
+  LD => LDCE: 64 instances
+
+Synth Design complete | Checksum: d14c34e9
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 430 Warnings, 259 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:06 ; elapsed = 00:05:58 . Memory (MB): peak = 2010.258 ; gain = 1530.113
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/Single_cycle_CPU/Single_cycle_CPU.runs/synth_1/sccomp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sccomp_utilization_synth.rpt -pb sccomp_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 22:37:03 2024...

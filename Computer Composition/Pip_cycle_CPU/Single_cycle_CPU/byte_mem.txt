@@ -1,0 +1,42 @@
+
+// data memory
+module dm(clk, DMWr, addr, din, dout,dm_op);
+   input          clk;
+   input          DMWr;
+   input     [8:0]addr;
+   input   [31:0]  din;
+   input  [2:0] dm_op;
+   output [31:0]  dout;
+     
+   reg [7:0] dmem[127:0];
+          
+   always @(posedge clk)
+      if (DMWr) begin
+      case (dm_op)
+      `dm_word:   begin 
+       dmem[addr]<=din[7:0];
+       dmem[addr+1]<=din[15:8];
+       dmem[addr+2]<=din[23:16];
+       dmem[addr+3]<=din[31:24];
+      end
+        
+      `dm_halfword:
+      begin
+      dmem[addr]<=din[7:0];
+       dmem[addr+1]<=din[15:8];
+      end    
+      `dm_byte:dmem[addr]<=din[7:0];
+      endcase
+     
+        $display("dmem[0x%8X] = 0x%8X,", addr, din); 
+      end
+
+   assign dout = (dm_op==`dm_word)? {dmem[addr+3][7:0],dmem[addr+2][7:0],dmem[addr+1][7:0],dmem[addr][7:0]}:
+                 (dm_op==`dm_halfword)? {{16{dmem[addr+1][7]}},dmem[addr+1][7:0],dmem[addr][7:0]}:
+                 (dm_op==`dm_byte)?{{24{dmem[addr][7]}},dmem[addr][7:0]}:
+                 (dm_op==`dm_halfword_unsigned)?  {{16{1'b0}},dmem[addr+1][7:0],dmem[addr][7:0]}:
+                 (dm_op==`dm_byte_unsigned)? {{24{1'b0}},dmem[addr][7:0]}:
+                 32'b0;
+    
+    
+endmodule    

@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Apr 11 08:58:32 2024
+# Process ID: 10612
+# Current directory: D:/Vivado/Single_cycle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18104 D:\Vivado\Single_cycle_CPU\Single_cycle_CPU.xpr
+# Log file: D:/Vivado/Single_cycle_CPU/vivado.log
+# Journal file: D:/Vivado/Single_cycle_CPU\vivado.jou
+# Running On: LAPTOP-29JSQ2PH, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Single_cycle_CPU/Single_cycle_CPU.xpr
+update_compile_order -fileset sources_1
