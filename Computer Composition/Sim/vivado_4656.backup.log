@@ -1,0 +1,440 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Apr 16 16:38:01 2024
+# Process ID: 4656
+# Current directory: D:/Git/GITHUB/Single_cycle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20392 D:\Git\GITHUB\Single_cycle_CPU\Single_cycle_CPU.xpr
+# Log file: D:/Git/GITHUB/Single_cycle_CPU/vivado.log
+# Journal file: D:/Git/GITHUB/Single_cycle_CPU\vivado.jou
+# Running On: LAPTOP-29JSQ2PH, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Git/GITHUB/Single_cycle_CPU/Single_cycle_CPU.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Git/GITHUB/Single_cycle_CPU/Single_cycle_CPU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1507.070 ; gain = 329.512
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sccomp_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Git/GITHUB/Single_cycle_CPU/Single_cycle_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'sccomp_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Git/GITHUB/Single_cycle_CPU/Single_cycle_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sccomp_tb_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Git/GITHUB/Single_cycle_CPU/Single_cycle_CPU.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sccomp_tb_behav xil_defaultlib.sccomp_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sccomp_tb_behav xil_defaultlib.sccomp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'Zero' [D:/Git/GITHUB/Single_cycle_CPU/pip code/SCPU.v:96]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'flush' [D:/Git/GITHUB/Single_cycle_CPU/pip code/SCPU.v:59]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'addr' [D:/Git/GITHUB/Single_cycle_CPU/pip code/sccomp.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Git/GITHUB/Single_cycle_CPU/Single_cycle_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sccomp_tb_behav -key {Behavioral:sim_1:Functional:sccomp_tb} -tclbatch {sccomp_tb.tcl} -view {D:/Git/GITHUB/Single_cycle_CPU/test.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/Git/GITHUB/Single_cycle_CPU/test.wcfg
+source sccomp_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+r[ 5] = 0x00000435,
+r[ 6] = 0x00001000,
+r[ 5] = 0x00001435,
+r[ 6] = 0x98765000,
+r[ 7] = 0x000019ad,
+r[ 8] = 0x98764c00,
+r[ 9] = 0x00001389,
+r[ 3] = 0x00000000,
+r[ 4] = 0x00000001,
+r[18] = 0x00000301,
+r[20] = 0x00000001,
+r[19] = 0x98763bcb,
+r[21] = 0x98765001,
+r[22] = 0x98765002,
+r[22] = 0x98766437,
+r[23] = 0x00001437,
+r[25] = 0x98767437,
+r[26] = 0x00000437,
+r[27] = 0x00000001,
+r[28] = 0x00000000,
+r[ 3] = 0x00000004,
+r[27] = 0x00004370,
+r[28] = 0x09876743,
+r[29] = 0xf9876743,
+r[27] = 0xcb000000,
+r[28] = 0x098763bc,
+r[29] = 0xf98763bc,
+r[ 3] = 0x00000000,
+r[ 5] = 0x000000ef,
+dmem[0x00000000] = 0x000000cb,
+dmem[0x00000001] = 0x0000003b,
+dmem[0x00000002] = 0x00000076,
+dmem[0x00000003] = 0x00000098,
+dmem[0x00000004] = 0x00000001,
+dmem[0x00000005] = 0x00000050,
+dmem[0x00000006] = 0x00000076,
+dmem[0x00000007] = 0x00000098,
+dmem[0x00000008] = 0x00000037,
+dmem[0x00000009] = 0x00000014,
+dmem[0x0000000a] = 0x00000000,
+dmem[0x0000000b] = 0x00000000,
+dmem[0x00000004] = 0x00000037,
+dmem[0x00000005] = 0x00000004,
+dmem[0x0000000a] = 0x000000cb,
+dmem[0x0000000b] = 0x0000003b,
+dmem[0x00000007] = 0x000000ef,
+dmem[0x00000009] = 0x000000ef,
+dmem[0x00000008] = 0x000000ef,
+r[ 5] = 0x98763bcb,
+r[ 7] = 0xffff9876,
+r[ 7] = 0x00009876,
+r[ 8] = 0xffffff98,
+r[ 8] = 0x00000098,
+r[ 8] = 0x0000003b,
+dmem[0x00000000] = 0x00000000,
+dmem[0x00000001] = 0x00000000,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 9] = 0x00000000,
+r[ 9] = 0x00000007,
+r[ 9] = 0x0000000d,
+r[ 9] = 0x0000000e,
+dmem[0x00000000] = 0x0000000e,
+dmem[0x00000001] = 0x00000000,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x0000000e,
+r[ 1] = 0x00000108,
+r[10] = 0x000007af,
+dmem[0x00000000] = 0x000000af,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007b2,
+dmem[0x00000000] = 0x000000b2,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007b3,
+dmem[0x00000000] = 0x000000b3,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007b6,
+dmem[0x00000000] = 0x000000b6,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007b7,
+dmem[0x00000000] = 0x000000b7,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007ba,
+dmem[0x00000000] = 0x000000ba,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007bb,
+dmem[0x00000000] = 0x000000bb,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007be,
+dmem[0x00000000] = 0x000000be,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007bf,
+dmem[0x00000000] = 0x000000bf,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007c2,
+dmem[0x00000000] = 0x000000c2,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007e3,
+dmem[0x00000000] = 0x000000e3,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007e6,
+dmem[0x00000000] = 0x000000e6,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007e7,
+dmem[0x00000000] = 0x000000e7,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007ea,
+dmem[0x00000000] = 0x000000ea,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007eb,
+dmem[0x00000000] = 0x000000eb,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007ee,
+dmem[0x00000000] = 0x000000ee,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007ef,
+dmem[0x00000000] = 0x000000ef,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007f2,
+dmem[0x00000000] = 0x000000f2,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007f3,
+dmem[0x00000000] = 0x000000f3,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007f6,
+dmem[0x00000000] = 0x000000f6,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007f7,
+dmem[0x00000000] = 0x000000f7,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007fa,
+dmem[0x00000000] = 0x000000fa,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007fb,
+dmem[0x00000000] = 0x000000fb,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x000007fe,
+dmem[0x00000000] = 0x000000fe,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x000007ff,
+dmem[0x00000000] = 0x000000ff,
+dmem[0x00000001] = 0x00000007,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000802,
+dmem[0x00000000] = 0x00000002,
+dmem[0x00000001] = 0x00000008,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000fa3,
+dmem[0x00000000] = 0x000000a3,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000fa6,
+dmem[0x00000000] = 0x000000a6,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000fa7,
+dmem[0x00000000] = 0x000000a7,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000faa,
+dmem[0x00000000] = 0x000000aa,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000fab,
+dmem[0x00000000] = 0x000000ab,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000fae,
+dmem[0x00000000] = 0x000000ae,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000faf,
+dmem[0x00000000] = 0x000000af,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000fb2,
+dmem[0x00000000] = 0x000000b2,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000fb3,
+dmem[0x00000000] = 0x000000b3,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000fb6,
+dmem[0x00000000] = 0x000000b6,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000fb7,
+dmem[0x00000000] = 0x000000b7,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000fba,
+dmem[0x00000000] = 0x000000ba,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000fbb,
+dmem[0x00000000] = 0x000000bb,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000fbe,
+dmem[0x00000000] = 0x000000be,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[10] = 0x00000fbf,
+dmem[0x00000000] = 0x000000bf,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+r[ 0] = 0x0000011c,
+r[10] = 0x00000fc2,
+dmem[0x00000000] = 0x000000c2,
+dmem[0x00000001] = 0x0000000f,
+dmem[0x00000002] = 0x00000000,
+dmem[0x00000003] = 0x00000000,
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sccomp_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.602 ; gain = 24.828
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 16 16:45:22 2024...
