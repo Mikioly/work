@@ -1,0 +1,24 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/Git/GITHUB/Sim/pip code/ctrl_encode_def.v,1711883565,verilog,,,,,,,,,,,,
+D:/Vivado/Sim/Single_cycle_CPU.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/Vivado/Sim/pip code/EXT.v,1710592809,verilog,,D:/Vivado/Sim/pip code/ForwardingUnit.v,D:/Vivado/Sim/pip code/ctrl_encode_def.v,EXT,,,,,,,,
+D:/Vivado/Sim/pip code/ForwardingUnit.v,1713017451,verilog,,D:/Vivado/Sim/pip code/GRE_array.v,,ForwardingUnit,,,,,,,,
+D:/Vivado/Sim/pip code/GRE_array.v,1713257203,verilog,,D:/Vivado/Sim/pip code/HazardDetectionUnit.v,,GRE_array,,,,,,,,
+D:/Vivado/Sim/pip code/HazardDetectionUnit.v,1713056849,verilog,,D:/Vivado/Sim/pip code/NPC.v,,HazardDetectionUnit,,,,,,,,
+D:/Vivado/Sim/pip code/NPC.v,1713781404,verilog,,D:/Vivado/Sim/pip code/PC.v,D:/Vivado/Sim/pip code/ctrl_encode_def.v,NPC,,,,,,,,
+D:/Vivado/Sim/pip code/PC.v,1625015737,verilog,,D:/Vivado/Sim/pip code/RF.v,,PC,,,,,,,,
+D:/Vivado/Sim/pip code/RF.v,1713783898,verilog,,D:/Vivado/Sim/pip code/SCPU.v,,RF,,,,,,,,
+D:/Vivado/Sim/pip code/SCPU.v,1713786348,verilog,,D:/Vivado/Sim/pip code/alu.v,D:/Vivado/Sim/pip code/ctrl_encode_def.v,SCPU,,,,,,,,
+D:/Vivado/Sim/pip code/alu.v,1621755150,verilog,,D:/Vivado/Sim/pip code/ctrl.v,D:/Vivado/Sim/pip code/ctrl_encode_def.v,alu,,,,,,,,
+D:/Vivado/Sim/pip code/ctrl.v,1713062207,verilog,,D:/Vivado/Sim/pip code/dm.v,,ctrl,,,,,,,,
+D:/Vivado/Sim/pip code/ctrl_encode_def.v,1711883565,verilog,,,,,,,,,,,,
+D:/Vivado/Sim/pip code/dm.v,1713783181,verilog,,D:/Vivado/Sim/pip code/im.v,D:/Vivado/Sim/pip code/ctrl_encode_def.v,dm,,,,,,,,
+D:/Vivado/Sim/pip code/im.v,1650968517,verilog,,D:/Vivado/Sim/pip code/sccomp.v,,im,,,,,,,,
+D:/Vivado/Sim/pip code/sccomp.v,1713783240,verilog,,D:/Vivado/Sim/pip code/sccomp_tb.v,,sccomp,,,,,,,,
+D:/Vivado/Sim/pip code/sccomp_tb.v,1713252751,verilog,,,,sccomp_tb,,,,,,,,
+D:/Vivado/Single_cycle_CPU/pip code/ctrl_encode_def.v,1711883565,verilog,,,,,,,,,,,,
+D:/Vivado/Single_cycle_CPU/pip code/top.v,1712045577,verilog,,,,top,,,,,,,,
+D:/Vivado/code/test1_code/code/ctrl_encode_def.v,1711883565,verilog,,,,,,,,,,,,

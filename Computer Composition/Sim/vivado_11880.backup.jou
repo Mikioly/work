@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Apr 22 12:07:02 2024
+# Process ID: 11880
+# Current directory: D:/Git/GITHUB/Sim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14100 D:\Git\GITHUB\Sim\Single_cycle_CPU.xpr
+# Log file: D:/Git/GITHUB/Sim/vivado.log
+# Journal file: D:/Git/GITHUB/Sim\vivado.jou
+# Running On: LAPTOP-29JSQ2PH, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Git/GITHUB/Sim/Single_cycle_CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Git/GITHUB/Sim/test.wcfg
+source sccomp_tb.tcl
+relaunch_sim
+close_sim
