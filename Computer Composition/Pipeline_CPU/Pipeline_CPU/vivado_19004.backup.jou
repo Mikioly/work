@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Apr 22 20:01:51 2024
+# Process ID: 19004
+# Current directory: D:/Vivado/Pipeline_CPU/Pipeline_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2484 D:\Vivado\Pipeline_CPU\Pipeline_CPU\Pipeline_CPU.xpr
+# Log file: D:/Vivado/Pipeline_CPU/Pipeline_CPU/vivado.log
+# Journal file: D:/Vivado/Pipeline_CPU/Pipeline_CPU\vivado.jou
+# Running On: LAPTOP-29JSQ2PH, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/ly/Desktop/td/HISSim/pip code/ForwardingUnit.v} {C:/Users/ly/Desktop/td/HISSim/pip code/sccomp.v} {C:/Users/ly/Desktop/td/HISSim/pip code/EXT.v} {C:/Users/ly/Desktop/td/HISSim/pip code/PC.v} {C:/Users/ly/Desktop/td/HISSim/pip code/RF.v} {C:/Users/ly/Desktop/td/HISSim/pip code/ctrl.v} {C:/Users/ly/Desktop/td/HISSim/pip code/SCPU.v} {C:/Users/ly/Desktop/td/HISSim/pip code/NPC.v} {C:/Users/ly/Desktop/td/HISSim/pip code/HazardDetectionUnit.v} {C:/Users/ly/Desktop/td/HISSim/pip code/alu.v} {C:/Users/ly/Desktop/td/HISSim/pip code/GRE_array.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/sccomp.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/sccomp.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/ctrl.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/ctrl.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/PC.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/PC.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/NPC.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/NPC.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/EXT.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/EXT.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/RF.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/RF.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/alu.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/alu.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/ForwardingUnit.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/ForwardingUnit.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/HazardDetectionUnit.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/HazardDetectionUnit.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/GRE_array.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/GRE_array.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ly/Desktop/td/HISSim/pip code/SCPU.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ly/Desktop/td/HISSim/pip code/SCPU.v}}
+add_files -norecurse {D:/Vivado/Pipeline_CPU/code/PC.v D:/Vivado/Pipeline_CPU/code/RF.v D:/Vivado/Pipeline_CPU/code/HazardDetectionUnit.v D:/Vivado/Pipeline_CPU/code/SCPU.v D:/Vivado/Pipeline_CPU/code/EXT.v D:/Vivado/Pipeline_CPU/code/GRE_array.v D:/Vivado/Pipeline_CPU/code/ctrl.v D:/Vivado/Pipeline_CPU/code/ForwardingUnit.v D:/Vivado/Pipeline_CPU/code/NPC.v D:/Vivado/Pipeline_CPU/code/alu.v}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 7
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 7
+wait_on_run synth_1

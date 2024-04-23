@@ -1,0 +1,1037 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6008
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1299.285 ; gain = 411.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/Vivado/Pipeline_CPU/code/SCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'HazardDetectionUnit' [D:/Vivado/Pipeline_CPU/code/HazardDetectionUnit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDetectionUnit' (0#1) [D:/Vivado/Pipeline_CPU/code/HazardDetectionUnit.v:24]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Pipeline_CPU/code/SCPU.v:55]
+INFO: [Synth 8-6157] synthesizing module 'GRE_array' [D:/Vivado/Pipeline_CPU/code/GRE_array.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'GRE_array' (0#1) [D:/Vivado/Pipeline_CPU/code/GRE_array.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Pipeline_CPU/code/SCPU.v:56]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Pipeline_CPU/code/SCPU.v:57]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/Pipeline_CPU/code/SCPU.v:58]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:69]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:70]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:71]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/Vivado/Pipeline_CPU/code/ctrl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [D:/Vivado/Pipeline_CPU/code/ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/Vivado/Pipeline_CPU/code/RF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (0#1) [D:/Vivado/Pipeline_CPU/code/RF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [D:/Vivado/Pipeline_CPU/code/EXT.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (0#1) [D:/Vivado/Pipeline_CPU/code/EXT.v:2]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:119]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:120]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:121]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:122]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:123]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:124]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Vivado/Pipeline_CPU/code/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Pipeline_CPU/code/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Vivado/Pipeline_CPU/code/alu.v:3]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:173]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:174]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:175]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:176]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:177]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:178]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:199]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:200]
+WARNING: [Synth 8-6104] Input port 'in' has an internal driver [D:/Vivado/Pipeline_CPU/code/SCPU.v:201]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Pipeline_CPU/code/SCPU.v:204]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Vivado/Pipeline_CPU/code/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/Vivado/Pipeline_CPU/code/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/Vivado/Pipeline_CPU/code/NPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (0#1) [D:/Vivado/Pipeline_CPU/code/NPC.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Pipeline_CPU/code/SCPU.v:240]
+INFO: [Synth 8-6157] synthesizing module 'ForwardingUnit' [D:/Vivado/Pipeline_CPU/code/ForwardingUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardingUnit' (0#1) [D:/Vivado/Pipeline_CPU/code/ForwardingUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU' (0#1) [D:/Vivado/Pipeline_CPU/code/SCPU.v:2]
+WARNING: [Synth 8-7071] port 'reg_sel' of module 'SCPU' is unconnected for instance 'U1_SCPU' [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v:40]
+WARNING: [Synth 8-7071] port 'reg_data' of module 'SCPU' is unconnected for instance 'U1_SCPU' [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v:40]
+WARNING: [Synth 8-7023] instance 'U1_SCPU' of module 'SCPU' has 11 connections declared, but only 9 given [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v:40]
+INFO: [Synth 8-6157] synthesizing module 'ROM_D' [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-12284-LAPTOP-29JSQ2PH/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_D' (0#1) [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-12284-LAPTOP-29JSQ2PH/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dm_controller' [D:/Vivado/Pipeline_CPU/file/dm_controller.v:15]
+INFO: [Synth 8-6157] synthesizing module 'RAM_B' [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-12284-LAPTOP-29JSQ2PH/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_B' (0#1) [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.runs/synth_1/.Xil/Vivado-12284-LAPTOP-29JSQ2PH/realtime/RAM_B_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (10) of module 'RAM_B' [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v:72]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [D:/Vivado/Pipeline_CPU/file/MIO_BUS.V:15]
+WARNING: [Synth 8-689] width (32) of port connection 'ram_addr' does not match port width (10) of module 'MIO_BUS_bbox_1' [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v:101]
+INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [D:/Vivado/Pipeline_CPU/file/Multi_8CH32.v:15]
+INFO: [Synth 8-6157] synthesizing module 'SSeg7' [D:/Vivado/Pipeline_CPU/file/SSeg7.v:15]
+INFO: [Synth 8-6157] synthesizing module 'SPIO' [D:/Vivado/Pipeline_CPU/file/SPIO.v:15]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/Vivado/Pipeline_CPU/file/clk_div.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [D:/Vivado/Pipeline_CPU/file/clk_div.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Counter_x' [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_x' (0#1) [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Enter' [D:/Vivado/Pipeline_CPU/file/Enter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Enter' (0#1) [D:/Vivado/Pipeline_CPU/file/Enter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v:22]
+WARNING: [Synth 8-3848] Net GPRSel in module/entity ctrl does not have driver. [D:/Vivado/Pipeline_CPU/code/ctrl.v:21]
+WARNING: [Synth 8-7137] Register rf_reg[0] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Pipeline_CPU/code/RF.v:19]
+WARNING: [Synth 8-3848] Net reg_data in module/entity SCPU does not have driver. [D:/Vivado/Pipeline_CPU/code/SCPU.v:15]
+WARNING: [Synth 8-7137] Register M0_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:47]
+WARNING: [Synth 8-7137] Register M1_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:48]
+WARNING: [Synth 8-7137] Register M2_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:49]
+WARNING: [Synth 8-7137] Register clr0_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:69]
+WARNING: [Synth 8-7137] Register clr1_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:84]
+WARNING: [Synth 8-7137] Register clr2_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:99]
+WARNING: [Synth 8-3848] Net counter_out in module/entity Counter_x does not have driver. [D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v:32]
+WARNING: [Synth 8-7129] Port clk in module Enter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[31] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[30] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[29] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[28] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[27] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[26] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[25] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[24] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[23] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[22] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[21] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[20] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[19] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[18] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[17] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[16] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[15] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[14] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[13] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[12] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[11] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[10] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[9] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[8] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[7] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[6] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[5] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[4] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[3] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[2] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[1] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_out[0] in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPRSel[1] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPRSel[0] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Zero in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[31] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[30] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[29] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[28] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[27] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[26] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[25] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[24] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[23] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[22] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[21] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[20] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[19] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[18] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[17] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[16] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[15] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[14] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[13] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[12] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[11] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[10] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[9] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[8] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[7] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[6] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[5] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[4] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[3] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[2] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[1] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[0] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[4] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[3] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[2] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[1] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_sel[0] in module SCPU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1404.789 ; gain = 516.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1404.789 ; gain = 516.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1404.789 ; gain = 516.816
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1406.570 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.gen/sources_1/ip/RAM_B/RAM_B/RAM_B_in_context.xdc] for cell 'U3_RAM_B'
+Finished Parsing XDC File [d:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.gen/sources_1/ip/RAM_B/RAM_B/RAM_B_in_context.xdc] for cell 'U3_RAM_B'
+Parsing XDC File [d:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.gen/sources_1/ip/ROM_D/ROM_D/ROM_D_in_context.xdc] for cell 'U2_ROMD'
+Finished Parsing XDC File [d:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.gen/sources_1/ip/ROM_D/ROM_D/ROM_D_in_context.xdc] for cell 'U2_ROMD'
+Parsing XDC File [D:/Vivado/Pipeline_CPU/file/icf-v-p.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [D:/Vivado/Pipeline_CPU/file/icf-v-p.xdc:5]
+Finished Parsing XDC File [D:/Vivado/Pipeline_CPU/file/icf-v-p.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Vivado/Pipeline_CPU/file/icf-v-p.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado/Pipeline_CPU/file/icf-v-p.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1515.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1515.633 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U3_RAM_B. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U2_ROMD. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [D:/Vivado/Pipeline_CPU/code/alu.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'WD_reg' [D:/Vivado/Pipeline_CPU/code/SCPU.v:108]
+WARNING: [Synth 8-327] inferring latch for variable 'MEM_WD_reg' [D:/Vivado/Pipeline_CPU/code/SCPU.v:158]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      5 Bit         XORs := 6     
++---Registers : 
+	              300 Bit    Registers := 4     
+	               33 Bit    Registers := 3     
+	               32 Bit    Registers := 36    
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input  300 Bit        Muxes := 4     
+	   5 Input   33 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 9     
+	   4 Input   33 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 9     
+	  19 Input   32 Bit        Muxes := 2     
+	  15 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 3     
+	  19 Input    4 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 45    
+	  19 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port GPRSel[1] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPRSel[0] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Zero in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[31] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[30] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[29] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[28] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[27] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[26] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[25] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[24] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[23] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[22] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[21] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[20] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[19] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[18] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[17] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[16] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[15] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[14] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[13] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[12] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[11] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[10] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[9] in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_data[8] in module SCPU is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[299] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[298] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[297] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[296] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[295] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[294] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[293] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[292] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[291] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[290] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[289] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[288] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[287] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[286] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[285] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[284] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[283] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[282] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[281] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[280] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[279] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[278] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[277] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[276] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[275] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[274] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[273] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[272] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[271] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[270] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[269] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[268] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[267] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[266] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[265] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[264] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[263] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[262] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[261] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[260] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[259] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[258] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[257] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[256] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[255] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[254] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[253] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[252] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[251] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[250] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[249] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[248] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[247] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[246] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[245] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[244] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[243] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[242] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin U1_SCPU/in_inferred:in0[241] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ROM_D         |         1|
+|2     |dm_controller |         1|
+|3     |RAM_B         |         1|
+|4     |MIO_BUS       |         1|
+|5     |Multi_8CH32   |         1|
+|6     |SSeg7         |         1|
+|7     |SPIO          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |MIO_BUS_bbox       |     1|
+|2     |Multi_8CH32_bbox   |     1|
+|3     |RAM_B              |     1|
+|4     |ROM_D              |     1|
+|5     |SPIO_bbox          |     1|
+|6     |SSeg7_bbox         |     1|
+|7     |dm_controller_bbox |     1|
+|8     |BUFG               |     9|
+|9     |CARRY4             |    79|
+|10    |LUT1               |  1058|
+|11    |LUT2               |    43|
+|12    |LUT3               |    88|
+|13    |LUT4               |   191|
+|14    |LUT5               |   804|
+|15    |LUT6               |  1416|
+|16    |MUXF7              |   256|
+|17    |MUXF8              |    64|
+|18    |FDCE               |  2428|
+|19    |FDRE               |    70|
+|20    |LD                 |    96|
+|21    |IBUF               |    23|
+|22    |OBUF               |    32|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1515.633 ; gain = 627.660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1515.633 ; gain = 516.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1515.633 ; gain = 627.660
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/dm_controller.edf]
+Finished Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/dm_controller.edf]
+Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/MIO_BUS.edf]
+Finished Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/MIO_BUS.edf]
+Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/Multi_8CH32.edf]
+Finished Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/Multi_8CH32.edf]
+Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/SSeg7.edf]
+Finished Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/SSeg7.edf]
+Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/SPIO.edf]
+Finished Parsing EDIF File [D:/Vivado/Pipeline_CPU/file/SPIO.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1515.633 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 543 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Addr_in_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Addr_in_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_read_from_dm_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/Data_write_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/dm_ctrl_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/dm_ctrl_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/dm_ctrl_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U3_dm_controller/mem_w_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/BTN_IBUF[0]_inst, from the path connected to top-level port: btn_i[0] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/BTN_IBUF[1]_inst, from the path connected to top-level port: btn_i[1] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/BTN_IBUF[2]_inst, from the path connected to top-level port: btn_i[2] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/BTN_IBUF[3]_inst, from the path connected to top-level port: btn_i[3] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/BTN_IBUF[4]_inst, from the path connected to top-level port: btn_i[4] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Common 17-14] Message 'Opt 31-32' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[0]_inst, from the path connected to top-level port: sw_i[0] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[10]_inst, from the path connected to top-level port: sw_i[10] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[11]_inst, from the path connected to top-level port: sw_i[11] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[12]_inst, from the path connected to top-level port: sw_i[12] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[13]_inst, from the path connected to top-level port: sw_i[13] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[14]_inst, from the path connected to top-level port: sw_i[14] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[15]_inst, from the path connected to top-level port: sw_i[15] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[1]_inst, from the path connected to top-level port: sw_i[1] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[2]_inst, from the path connected to top-level port: sw_i[2] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[3]_inst, from the path connected to top-level port: sw_i[3] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[4]_inst, from the path connected to top-level port: sw_i[4] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[5]_inst, from the path connected to top-level port: sw_i[5] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[6]_inst, from the path connected to top-level port: sw_i[6] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[7]_inst, from the path connected to top-level port: sw_i[7] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[8]_inst, from the path connected to top-level port: sw_i[8] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[9]_inst, from the path connected to top-level port: sw_i[9] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U6_SSeg7/SW0_IBUF_inst, from the path connected to top-level port: sw_i[0] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/wea_mem_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[24]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[25]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[26]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[27]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[28]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[29]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[30]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[31]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_read_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/wea_mem_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/wea_mem_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/wea_mem_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[24]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[25]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[26]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[27]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[28]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[29]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[30]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[31]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U3_dm_controller/Data_write_to_dm_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+INFO: [Common 17-14] Message 'Opt 31-33' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[7]_inst, from the path connected to top-level port: disp_seg_o[7] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[6]_inst, from the path connected to top-level port: disp_seg_o[6] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[5]_inst, from the path connected to top-level port: disp_seg_o[5] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[4]_inst, from the path connected to top-level port: disp_seg_o[4] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[3]_inst, from the path connected to top-level port: disp_seg_o[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[2]_inst, from the path connected to top-level port: disp_seg_o[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[1]_inst, from the path connected to top-level port: disp_seg_o[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_seg_o_OBUF[0]_inst, from the path connected to top-level port: disp_seg_o[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[0]_inst, from the path connected to top-level port: disp_an_o[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[1]_inst, from the path connected to top-level port: disp_an_o[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[2]_inst, from the path connected to top-level port: disp_an_o[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[3]_inst, from the path connected to top-level port: disp_an_o[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[4]_inst, from the path connected to top-level port: disp_an_o[4] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[5]_inst, from the path connected to top-level port: disp_an_o[5] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[6]_inst, from the path connected to top-level port: disp_an_o[6] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, disp_an_o_OBUF[7]_inst, from the path connected to top-level port: disp_an_o[7] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[9]_inst, from the path connected to top-level port: led_o[9] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[8]_inst, from the path connected to top-level port: led_o[8] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[7]_inst, from the path connected to top-level port: led_o[7] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[6]_inst, from the path connected to top-level port: led_o[6] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[5]_inst, from the path connected to top-level port: led_o[5] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[4]_inst, from the path connected to top-level port: led_o[4] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[3]_inst, from the path connected to top-level port: led_o[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[2]_inst, from the path connected to top-level port: led_o[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[1]_inst, from the path connected to top-level port: led_o[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[15]_inst, from the path connected to top-level port: led_o[15] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[14]_inst, from the path connected to top-level port: led_o[14] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[13]_inst, from the path connected to top-level port: led_o[13] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[12]_inst, from the path connected to top-level port: led_o[12] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[11]_inst, from the path connected to top-level port: led_o[11] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[10]_inst, from the path connected to top-level port: led_o[10] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, led_o_OBUF[0]_inst, from the path connected to top-level port: led_o[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1515.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  LD => LDCE: 96 instances
+
+Synth Design complete | Checksum: b924f4b9
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 456 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1515.633 ; gain = 1023.621
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 08:44:48 2024...

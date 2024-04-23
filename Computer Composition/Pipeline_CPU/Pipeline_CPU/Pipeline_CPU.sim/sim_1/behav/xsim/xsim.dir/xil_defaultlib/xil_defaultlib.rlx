@@ -1,0 +1,17 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.gen/sources_1/ip/RAM_B/RAM_B_sim_netlist.v,1711512097,verilog,,D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.gen/sources_1/ip/ROM_D/ROM_D_sim_netlist.v,,RAM_B;RAM_B_blk_mem_gen_generic_cstr;RAM_B_blk_mem_gen_prim_width;RAM_B_blk_mem_gen_prim_wrapper_init;RAM_B_blk_mem_gen_top;RAM_B_blk_mem_gen_v8_4_6;RAM_B_blk_mem_gen_v8_4_6_synth,,,,,,,,
+D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.gen/sources_1/ip/ROM_D/ROM_D_sim_netlist.v,1711512088,verilog,,D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v,,ROM_D;ROM_D_dist_mem_gen_v8_0_13;ROM_D_dist_mem_gen_v8_0_13_synth;ROM_D_rom,,,,,,,,
+D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v,1711877238,verilog,,,,top,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/Counter_3_IO.v,1711436670,verilog,,D:/Vivado/Pipeline_CPU/file/Enter.v,,Counter_x,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/Enter.v,1686492357,verilog,,D:/Vivado/Pipeline_CPU/file/MIO_BUS.V,,Enter,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/MIO_BUS.V,1687763469,verilog,,D:/Vivado/Pipeline_CPU/file/Multi_8CH32.v,,MIO_BUS,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/Multi_8CH32.v,1687660979,verilog,,D:/Vivado/Pipeline_CPU/file/SCPU.v,,Multi_8CH32,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/SCPU.v,1687256632,verilog,,D:/Vivado/Pipeline_CPU/file/SPIO.v,,SCPU,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/SPIO.v,1687257600,verilog,,D:/Vivado/Pipeline_CPU/file/SSeg7.v,,SPIO,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/SSeg7.v,1687676553,verilog,,D:/Vivado/Pipeline_CPU/file/clk_div.v,,SSeg7,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/clk_div.v,1711857067,verilog,,D:/Vivado/Pipeline_CPU/file/dm_controller.v,,clk_div,,,,,,,,
+D:/Vivado/Pipeline_CPU/file/dm_controller.v,1687230764,verilog,,D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/top.v,,dm_controller,,,,,,,,

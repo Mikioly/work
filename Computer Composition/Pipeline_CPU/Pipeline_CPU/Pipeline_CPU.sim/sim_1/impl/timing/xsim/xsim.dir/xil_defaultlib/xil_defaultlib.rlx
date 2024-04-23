@@ -1,0 +1,5 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/Vivado/Pipeline_CPU/Pipeline_CPU/Pipeline_CPU.sim/sim_1/impl/timing/xsim/top_time_impl.v,1713180169,verilog,,,,EXT;GRE_array;GRE_array__hierPathDup__1;GRE_array__hierPathDup__2;GRE_array__hierPathDup__3;MIO_BUS;Multi_8CH32;NPC;PC;RAM_B;RAM_B_blk_mem_gen_generic_cstr;RAM_B_blk_mem_gen_prim_width;RAM_B_blk_mem_gen_prim_wrapper_init;RAM_B_blk_mem_gen_top;RAM_B_blk_mem_gen_v8_4_6;RAM_B_blk_mem_gen_v8_4_6_synth;RF;ROM_D;ROM_D_dist_mem_gen_v8_0_13;ROM_D_dist_mem_gen_v8_0_13_synth;ROM_D_rom;SCPU;SPIO;SSeg7;alu;clk_div;dm_controller;glbl;top,,,,,,,,
