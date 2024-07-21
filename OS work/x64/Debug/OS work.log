@@ -1,0 +1,4 @@
+﻿  work3.cpp
+D:\Vs project\OS work\work3.cpp(245,31): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\Vs project\OS work\work3.cpp(317): warning C4715: “FileSystem::deleteDirectory”: 不是所有的控件路径都返回值
+  OS work.vcxproj -> D:\Vs project\OS work\x64\Debug\OS work.exe
